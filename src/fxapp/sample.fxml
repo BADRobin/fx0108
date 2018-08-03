@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxapp.Controller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxapp.Controller">
    <top>
       <VBox prefHeight="74.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
@@ -42,6 +42,7 @@
                   <TextField fx:id="ageField" layoutX="223.0" layoutY="17.0" prefHeight="25.0" prefWidth="62.0" />
                   <Button mnemonicParsing="false" onAction="#addStudent" text="Add" translateX="20.0" />
                   <Button mnemonicParsing="false" onAction="#deleteStudent" text="Delate" translateX="20.0" />
+                  <Button mnemonicParsing="false" onAction="#editStudent" text="Edit" translateX="20.0" />
               </items>
             </ToolBar>
          </children>
