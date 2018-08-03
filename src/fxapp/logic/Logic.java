@@ -46,8 +46,8 @@ public class Logic {
     }
 
     public void addStudent(String name, String lastName, int age) {
-        try {
-            PreparedStatement ps = connection.prepareStatement("insert into student(name, lastName, age) values (?, ?, ?)");
+        try (PreparedStatement ps = connection.prepareStatement("insert into student(name, lastName, age) values (?, ?, ?)")){
+
             ps.setString(1, name);
             ps.setString(2, lastName);
             ps.setInt(3, age);
